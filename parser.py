@@ -20,7 +20,7 @@ else:
 searchterm = sys.argv[1] # will also be the name of the folder
 url = "https://www.google.co.in/search?q="+searchterm+"&source=lnms&tbm=isch"
 
-# NEED TO DOWNLOAD CHROMEDRIVER, insert path to chromedriver inside parentheses in following line
+# Download the chromedriver and insert the path in the following line if you dont have it in your PYTHONPATH already.
 browser = webdriver.Chrome()
 browser.get(url)
 header={'User-Agent':"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36"}
